@@ -41,9 +41,6 @@ awk '!seen[$0]++' .gitignore > temp_gitignore
 mv temp_gitignore .gitignore
 
 # Copy another script from an existing folder on your PC
-curl -o run.sh "https://raw.githubusercontent.com/GuillaumeMichel10/EpitechProjectInit/main/run.sh"
-
-# Add files to the Git repository
-# to Add
+# curl -o run.sh "https://raw.githubusercontent.com/GuillaumeMichel10/EpitechProjectInit/main/run.sh"
 
 echo "Project created successfully in the directory $project_path/$project_name."

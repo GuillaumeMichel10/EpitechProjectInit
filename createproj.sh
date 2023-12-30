@@ -23,11 +23,11 @@ mkdir -p "$project_path/$project_name"
 cd "$project_path/$project_name" || exit
 
 # URLs des fichiers .gitignore sur GitHub
-gitignore_jetbrains_url="https://raw.githubusercontent.com/github/gitignore/4488915eec0b3a45b5c63ead28f286819c0917de/Global/JetBrains.gitignore"
-gitignore_vscode_url="https://raw.githubusercontent.com/github/gitignore/4488915eec0b3a45b5c63ead28f286819c0917de/Global/VisualStudioCode.gitignore"
-gitignore_c_url="https://raw.githubusercontent.com/github/gitignore/4488915eec0b3a45b5c63ead28f286819c0917de/C.gitignore"
-gitignore_cpp_url="https://raw.githubusercontent.com/github/gitignore/4488915eec0b3a45b5c63ead28f286819c0917de/C%2B%2B.gitignore"
-gitignore_haskell_url="https://raw.githubusercontent.com/github/gitignore/4488915eec0b3a45b5c63ead28f286819c0917de/Haskell.gitignore"
+gitignore_jetbrains_url="https://raw.githubusercontent.com/github/gitignore/main/Global/JetBrains.gitignore"
+gitignore_vscode_url="https://raw.githubusercontent.com/github/gitignore/main/Global/VisualStudioCode.gitignore"
+gitignore_c_url="https://raw.githubusercontent.com/github/gitignore/main/C.gitignore"
+gitignore_cpp_url="https://raw.githubusercontent.com/github/gitignore/main/C%2B%2B.gitignore"
+gitignore_haskell_url="https://raw.githubusercontent.com/github/gitignore/main/Haskell.gitignore"
 
 # Téléchargement des fichiers .gitignore
 curl -o JetBrains.gitignore "$gitignore_jetbrains_url"
@@ -44,7 +44,7 @@ awk '!seen[$0]++' .gitignore > temp_gitignore
 mv temp_gitignore .gitignore
 
 # Copy another script from an existing folder on your PC
-curl -o run.sh "https://raw.githubusercontent.com/GuillaumeMichel10/EpitechProjectInit/f010ff0ed3cb10dadf0879b695a15eaa905d6a23/run.sh"
+curl -o run.sh "https://raw.githubusercontent.com/GuillaumeMichel10/EpitechProjectInit/main/run.sh"
 
 # Add files to the Git repository
 # to Add

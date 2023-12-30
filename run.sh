@@ -8,4 +8,4 @@ SOURCE_FOLDER=$(pwd)
 
 DEST_FOLDER=/home/student/
 
-docker run --rm -v "$SOURCE_FOLDER:$DEST_FOLDER" -it epitechcontent/epitest-docker /bin/bash -c 'useradd student && su - student'
+docker run --rm -v "$SOURCE_FOLDER:$DEST_FOLDER:ro" -it epitechcontent/epitest-docker /bin/bash -c 'useradd student && su - student'

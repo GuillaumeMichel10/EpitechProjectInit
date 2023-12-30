@@ -44,7 +44,7 @@ awk '!seen[$0]++' .gitignore > temp_gitignore
 mv temp_gitignore .gitignore
 
 # Copy another script from an existing folder on your PC
-cp /path/to/your/other_script.sh .
+curl -o run.sh "https://raw.githubusercontent.com/GuillaumeMichel10/EpitechProjectInit/f010ff0ed3cb10dadf0879b695a15eaa905d6a23/run.sh"
 
 # Add files to the Git repository
 # to Add
